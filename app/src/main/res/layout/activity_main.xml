@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <TextView
@@ -28,6 +29,7 @@
         android:layout_marginTop="40dp"
         />
     <EditText
+        android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textCapWords"
@@ -43,12 +45,12 @@
         android:layout_marginTop="20dp"
         />
     <EditText
+        android:id="@+id/etCollege"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
+        android:inputType="textMultiLine|textCapSentences"
         android:hint="info about college"
-        android:minLines="2"
-        android:maxLines="5"
+        android:minLines="5"
         android:gravity="left"
         />
     <TextView
@@ -59,14 +61,18 @@
         android:layout_marginTop="20dp"
         />
     <EditText
+        android:id="@+id/etPhoneNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:hint="e.g. 96372xxxxx"
+        android:maxLength="10"
+
         android:digits="0123456789"
         android:gravity="left"
         />
     <Button
+        android:id="@+id/btnValidate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -76,4 +82,14 @@
         android:backgroundTint="@color/cardview_dark_background"
         />
 
+    <Button
+        android:id="@+id/btnMoveToNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Move to next screen"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:backgroundTint="@color/cardview_dark_background"
+        />
 </LinearLayout>
