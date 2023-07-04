@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerificationActivity"
+    android:orientation="vertical"
+    android:padding="20sp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Information: "
+        android:layout_marginTop="20dp"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:id="@+id/tvName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Info about college"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/tvCollege"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marks"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/tvMarks"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Percentage"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/tvPercentage"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+        android:id="@+id/tvPhoneNo"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I agree that information provided is correct"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:textStyle="bold"
+        android:id="@+id/cbIAgree"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:text="Submit"
+        android:layout_gravity="center"
+        android:textSize="50sp"
+        android:id="@+id/btnSubmit"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Back"
+        android:layout_gravity="center"
+        android:textSize="50sp"
+        android:id="@+id/btnBack"/>
+
+</LinearLayout>

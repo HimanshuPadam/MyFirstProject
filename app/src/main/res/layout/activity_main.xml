@@ -6,13 +6,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+   >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Linear Layout Project"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:gravity="center"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,7 +27,7 @@
         android:textSize="20sp"
         android:gravity="left"
         android:text="Enter your name"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         />
     <EditText
         android:id="@+id/etName"
@@ -42,7 +43,7 @@
         android:textSize="20sp"
         android:text="Enter something about your college"
         android:gravity="left"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         />
     <EditText
         android:id="@+id/etCollege"
@@ -50,15 +51,47 @@
         android:layout_height="wrap_content"
         android:inputType="textMultiLine|textCapSentences"
         android:hint="info about college"
-        android:minLines="5"
+        android:minLines="2"
+        android:gravity="left"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Enter your marks"
+        android:textSize="20sp"
+        android:gravity="left"
+        />
+    <EditText
+        android:id="@+id/etMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:hint="marks"
+        android:gravity="left"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Enter your percentage"
+        android:textSize="20sp"
+        android:gravity="left"
+        />
+    <EditText
+        android:id="@+id/etPercentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberDecimal"
+        android:hint="percentage"
         android:gravity="left"
         />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:text="Enter your phone number"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         />
     <EditText
         android:id="@+id/etPhoneNo"
@@ -67,29 +100,18 @@
         android:inputType="number"
         android:hint="e.g. 96372xxxxx"
         android:maxLength="10"
-
         android:digits="0123456789"
         android:gravity="left"
         />
+
     <Button
         android:id="@+id/btnValidate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:text="Validate"
         android:gravity="center"
         android:textSize="20sp"
-        android:backgroundTint="@color/cardview_dark_background"
         />
 
-    <Button
-        android:id="@+id/btnMoveToNext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="Move to next screen"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:backgroundTint="@color/cardview_dark_background"
-        />
 </LinearLayout>
